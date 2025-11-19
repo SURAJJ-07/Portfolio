@@ -1,53 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>
-			Week1 Class
-		</title>
-		<meta charset="utf-8">
-	</head>
-	<body>
-		<header>
-			<h1>SURAJ</h1>
-			<nav>
-				<a href="#">Home</a>
-				<a href="#">Project</a>
-				<a href="#">About</a>
-				<a href="#">Contact</a>
-			</nav>
-		</header>
-		<main>
-			<aside>
-				<p>
-					My name is Suraj Regmi. I’m 22 years old and currently studying at Herald College. I live in Kandaghari. I’m passionate about technology, coding, and creating innovative digital projects. I always aim to learn new skills, improve myself, and work hard toward becoming a professional developer.
-				</p>	
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suraj Regmi Portfolio</title>
+    <link rel="stylesheet" href="SurajRegmi.css">
+</head>
 
-			</aside>
-			<section>
-				<h2>My Projects</h2>
-				<table>
-					<tr>
+<body>
 
-						<th>Car Racing</th>
-						<th>Bike racing</th>
-						<th>Temple Run</th>
-					</tr>
-					<tr>
-						<td>A fast-paced car racing game focused on speed, skill, and thrilling tracks for an exciting racing experience.</td>
-						<td>A fast and thrilling bike racing game filled with speed, stunts, and sharp turns for an adrenaline-packed ride.</td>
-						<td>An endless running adventure where players dodge obstacles, collect coins, and run as far as they can to survive.</td>
-					</tr>
-				</table>
-			</section>
-				<form>
-					<label for="fname">Full Name:</label><br>
-					<input type="text" id="fname" name="fname"><br>
-					<label for="femail">Email:</label><br>
-					<input type="femail" id="femail" name="femail"><br>
-					<label for="message">Message:</label><br>
-					<input type="text" id="message" name="message"><br>
-					<input type="submit" value="Submit">
-				</form>
-		</main>		
-		<footer>@Copyright2025</footer>
+    <!-- NAVBAR -->
+    <nav>
+        <h2 class="logo">SURAJ</h2>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
+    <!-- HOME -->
+    <section id="home" class="section home-section">
+        <div class="home-content">
+            <img src="images/my.jpg" class="profile" alt="Suraj Regmi Photo">
+            <h1>SURAJ REGMI</h1>
+            <p class="role">Student • Developer</p>
+            <p class="info">Age 22 • Kandaghari • Herald College Student</p>
+        </div>
+    </section>
+
+    <!-- ABOUT (Moved Before Projects) -->
+    <section id="about" class="section">
+        <h2 class="title">ABOUT ME</h2>
+        <p class="about-text">
+            I’m Suraj Regmi, a dedicated learner and aspiring developer passionate about creating
+            interactive games and useful applications. I enjoy exploring new technologies and
+            improving my skills through practical projects and hands-on experience.
+        </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <h2 class="title">PROJECTS</h2>
+
+        <div class="project-box">
+            <img src="images/car.jpeg" alt="Car Racing Game">
+            <h3>Car Racing Game</h3>
+            <p>A fast–paced racing game focused on speed and skills.</p>
+        </div>
+
+        <div class="project-box">
+            <img src="images/bike.png" alt="Bike Racing Game">
+            <h3>Bike Racing Game</h3>
+            <p>Thrilling bike racing experience with sharp turns and action.</p>
+        </div>
+
+        <div class="project-box">
+            <img src="images/templerun.webp" alt="Temple Run Style Game">
+            <h3>Temple Run Style Game</h3>
+            <p>Endless runner with obstacles, speed, and adventure.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <h2 class="title">CONTACT ME</h2>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea placeholder="Your Message" required></textarea>
+
+            <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Suraj Regmi — All Rights Reserved</p>
+    </footer>
+
+    <!-- NAV ACTIVE SCRIPT -->
+    <script>
+        const links = document.querySelectorAll("nav ul li a");
+        links.forEach(link => {
+            link.addEventListener("click", () => {
+                links.forEach(a => a.classList.remove("active"));
+                link.classList.add("active");
+            });
+        });
+    </script>
+
+</body>
+</html>
