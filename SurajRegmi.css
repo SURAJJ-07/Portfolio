@@ -23,6 +23,7 @@ section {
     color: #cfa3ff;
     text-shadow: 0 0 10px #a855ff;
 }
+
 nav {
     width: 100%;
     display: flex;
@@ -69,6 +70,7 @@ nav ul li a.active {
     color: #fff;
     box-shadow: 0 0 10px #a637ff;
 }
+
 .home-section {
     padding-top: 130px;
 }
@@ -96,6 +98,8 @@ nav ul li a.active {
     font-size: 15px;
     opacity: 0.8;
 }
+
+/* About Section */
 .about-text {
     width: 70%;
     margin: auto;
@@ -103,6 +107,7 @@ nav ul li a.active {
     line-height: 1.7;
     opacity: 0.9;
 }
+
 #projects {
     display: flex;
     flex-wrap: wrap;
@@ -131,41 +136,41 @@ nav ul li a.active {
     transform: scale(1.05);
     box-shadow: 0 0 20px #a855ff;
 }
-CONTACT SECTION
+
 .contact-form {
-    width: 60%;
+    width: 40%; 
+    max-width: 400px; 
     margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px; 
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 12px;
-    border-radius: 10px;
-    border: none;
+    padding: 10px; /* smaller padding */
+    border-radius: 8px;
+    border: 1px solid rgba(168, 55, 255, 0.3);
     background: rgba(45, 0, 80, 0.6);
     color: white;
-    font-size: 15px;
+    font-size: 14px; 
     outline: none;
-    border: 1px solid rgba(168, 55, 255, 0.3);
+    resize: none;
 }
 
 .contact-form textarea {
-    height: 130px;
-    resize: none;
+    height: 100px; 
 }
 
 .btn-submit {
     background: #a637ff;
     color: white;
-    padding: 12px;
+    padding: 10px;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
     transition: 0.3s;
 }
 
@@ -173,6 +178,7 @@ CONTACT SECTION
     background: #ca59ff;
     box-shadow: 0 0 15px #a855ff;
 }
+
 footer {
     text-align: center;
     padding: 20px;
