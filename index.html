@@ -9,7 +9,6 @@
 
 <body>
 
-    <!-- NAVBAR -->
     <nav>
         <h2 class="logo">SURAJ</h2>
         <ul>
@@ -20,7 +19,6 @@
         </ul>
     </nav>
 
-    <!-- HOME -->
     <section id="home" class="section home-section">
         <div class="home-content">
             <img src="images/my.jpg" class="profile" alt="Suraj Regmi Photo">
@@ -40,7 +38,6 @@
         </p>
     </section>
 
-    <!-- PROJECTS -->
     <section id="projects" class="section">
         <h2 class="title">PROJECTS</h2>
 
@@ -63,7 +60,6 @@
         </div>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact" class="section">
         <h2 class="title">CONTACT ME</h2>
 
@@ -75,22 +71,10 @@
             <button type="submit" class="btn-submit">Send Message</button>
         </form>
     </section>
-
-    <!-- FOOTER -->
+ 
     <footer>
         <p>© 2025 Suraj Regmi — All Rights Reserved</p>
     </footer>
-
-    <!-- NAV ACTIVE SCRIPT -->
-    <script>
-        const links = document.querySelectorAll("nav ul li a");
-        links.forEach(link => {
-            link.addEventListener("click", () => {
-                links.forEach(a => a.classList.remove("active"));
-                link.classList.add("active");
-            });
-        });
-    </script>
 
 </body>
 </html>
